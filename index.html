@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AI와 Computer Vision을 공부하는 신유원의 포트폴리오입니다.">
+  <meta name="theme-color" content="#07111f">
+  <title>신유원 · AI & Computer Vision</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2307111f'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%235fe1ff' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%23a995ff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="wrap">
+      <nav class="nav" aria-label="주요 메뉴">
+        <a class="mark" href="#top"><span class="mark-symbol">SY</span><span>Shin Yuwon</span></a>
+        <div class="nav-links">
+          <a href="#stack">Stack</a>
+          <a href="#projects">Projects</a>
+          <a href="#credentials">Credentials</a>
+          <a class="nav-cta" href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <div>
+          <p class="eyebrow">AI · Computer Vision</p>
+          <h1 id="hero-title">신유원<span class="name-en">Shin Yuwon</span></h1>
+          <p class="intro"><strong>대덕소프트웨어마이스터고등학교 2학년.</strong><br>현실의 시각 데이터를 이해하고, 모델을 동작하는 소프트웨어로 연결하는 과정을 공부합니다.</p>
+          <p class="brand-line">“빛나는 너는 이미 이겼다.”</p>
+          <div class="actions">
+            <a class="button primary" href="#projects">프로젝트 보기</a>
+            <a class="button" href="https://github.com/kimwonshin" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="button" href="https://wonshin.tistory.com/" target="_blank" rel="noreferrer">Tistory</a>
+          </div>
+        </div>
+        <figure class="portrait-stage" aria-label="신유원 프로필 사진">
+          <div class="portrait-frame"><img src="./assets/justin_yoo.png" alt="신유원 프로필 사진"></div>
+          <figcaption class="portrait-badge">BUILD<br>LEARN<br>SHINE</figcaption>
+        </figure>
+      </section>
+
+      <section class="section" id="stack">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker">01 · Technical stack</span>
+            <div><h2>Seeing is only<br>the beginning.</h2><p class="section-copy">모델 학습에서 API와 영상 처리까지, Computer Vision 시스템을 구성하는 기술을 프로젝트에 적용합니다.</p></div>
+          </div>
+          <div class="stack-grid" aria-label="기술 스택. 각 카드에 마우스를 올리거나 키보드로 선택하면 쉬운 설명이 표시됩니다.">
+            <article class="stack-card stack-opencv" tabindex="0" aria-describedby="stack-opencv-tip">
+              <div class="stack-card-top"><span class="stack-index">01</span><span class="stack-purpose">영상 분석</span></div>
+              <img class="stack-icon" src="./assets/tech/opencv.svg" alt="OpenCV 아이콘">
+              <h3>OpenCV</h3>
+              <div class="stack-tooltip" id="stack-opencv-tip" role="tooltip"><small>쉽게 말하면</small><p>카메라나 사진 속 사물을 컴퓨터가 읽고 분석하도록 돕는 영상 처리 도구입니다.</p><span>D-ask 외 CV 프로젝트의 이미지 전처리에 활용</span></div>
+            </article>
+            <article class="stack-card stack-tensorflow" tabindex="0" aria-describedby="stack-tensorflow-tip">
+              <div class="stack-card-top"><span class="stack-index">02</span><span class="stack-purpose">AI 학습</span></div>
+              <img class="stack-icon" src="./assets/tech/tensorflow.svg" alt="TensorFlow 아이콘">
+              <h3>TensorFlow</h3>
+              <div class="stack-tooltip" id="stack-tensorflow-tip" role="tooltip"><small>쉽게 말하면</small><p>데이터의 패턴을 학습해 예측하는 AI 모델을 만들고 훈련하는 도구입니다.</p><span>이미지 분류·인식 모델 학습에 활용</span></div>
+            </article>
+            <article class="stack-card stack-fastapi" tabindex="0" aria-describedby="stack-fastapi-tip">
+              <div class="stack-card-top"><span class="stack-index">03</span><span class="stack-purpose">서비스 연결</span></div>
+              <img class="stack-icon" src="./assets/tech/fastapi.svg" alt="FastAPI 아이콘">
+              <h3>FastAPI</h3>
+              <div class="stack-tooltip" id="stack-fastapi-tip" role="tooltip"><small>쉽게 말하면</small><p>AI 기능을 웹이나 앱에서 호출할 수 있도록 연결 통로를 만드는 도구입니다.</p><span>D-ask의 데이터와 AI 기능을 API로 연결</span></div>
+            </article>
+            <article class="stack-card stack-docker" tabindex="0" aria-describedby="stack-docker-tip">
+              <div class="stack-card-top"><span class="stack-index">04</span><span class="stack-purpose">실행 환경</span></div>
+              <img class="stack-icon" src="./assets/tech/docker.svg" alt="Docker 아이콘">
+              <h3>Docker</h3>
+              <div class="stack-tooltip" id="stack-docker-tip" role="tooltip"><small>쉽게 말하면</small><p>어떤 컴퓨터에서도 같은 설정으로 프로그램이 실행되도록 환경을 상자처럼 묶어줍니다.</p><span>팀원이 같은 환경에서 서비스를 실행하도록 구성</span></div>
+            </article>
+            <article class="stack-card stack-git" tabindex="0" aria-describedby="stack-git-tip">
+              <div class="stack-card-top"><span class="stack-index">05</span><span class="stack-purpose">협업·기록</span></div>
+              <img class="stack-icon" src="./assets/tech/git.svg" alt="Git 아이콘">
+              <h3>Git</h3>
+              <div class="stack-tooltip" id="stack-git-tip" role="tooltip"><small>쉽게 말하면</small><p>코드가 어떻게 바뀌었는지 기록하고, 여러 사람이 만든 작업을 안전하게 합치는 도구입니다.</p><span>팀 프로젝트의 버전 관리와 협업에 활용</span></div>
+            </article>
+          </div>
+          <p class="stack-hint"><span aria-hidden="true">↗</span> 카드에 마우스를 올리거나 키보드로 선택해 쉬운 설명을 확인하세요.</p>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker">02 · Selected work</span>
+            <div><h2>Projects,<br>proved in detail.</h2><p class="section-copy">실제 화면과 근거를 바탕으로 프로젝트의 문제, 결과, 기술 선택과 제가 맡은 일을 구분해 기록합니다.</p></div>
+          </div>
+          <div class="project-list">
+            <article class="project-preview">
+              <a class="preview-visual dask-preview" href="./projects/d-ask/" aria-label="D-ask 프로젝트 상세 보기"><img src="./assets/d-ask/main-screen.png" alt="D-ask 서비스 메인 화면"></a>
+              <div class="preview-info">
+                <div><span class="kicker">Project 01 · Backend &amp; AI</span><h3>D-ask — 흩어진 학교 정보를 한 번의 질문으로</h3><p>5종의 학교 데이터를 수집하고, BFS 탐색과 JSON 정규화로 AI가 사용할 수 있는 데이터 파이프라인을 구축했습니다.</p></div>
+                <a class="button primary" href="./projects/d-ask/">케이스 스터디 보기</a>
+              </div>
+            </article>
+            <article class="project-preview">
+              <a class="preview-visual hear-preview" href="./projects/hear/" aria-label="HEAR 프로젝트 상세 보기"><img src="./assets/hear/interface-placeholder.svg" alt="HEAR AI 대화와 일기 생성 콘셉트 목업"></a>
+              <div class="preview-info">
+                <div><span class="kicker hear-kicker">Project 02 · AI feature</span><h3>HEAR — 대화를 이미지가 있는 감정 기록으로</h3><p>일기 기반 해시태그, AI 이미지, AI 스티커 생성 기능을 구현해 대화로 만든 일기를 시각적 기억으로 확장했습니다.</p></div>
+                <a class="button hear-primary" href="./projects/hear/">케이스 스터디 보기</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section credentials-section" id="credentials">
+        <div class="wrap">
+          <div class="section-head">
+            <span class="kicker">03 · Credentials &amp; awards</span>
+            <div><h2>Learning,<br>recognized.</h2><p class="section-copy">기초 역량을 검증한 국가기술자격과 실제 AI 문제 해결 결과로 받은 수상 기록입니다. 카드를 눌러 증빙과 상세 내용을 확인할 수 있습니다.</p></div>
+          </div>
+
+          <div class="credential-grid" aria-label="자격증과 수상 경력. 각 카드는 마우스를 올리면 쉬운 설명이 표시되고, 누르면 증빙 화면으로 전환됩니다.">
+            <button class="credential-card credential-certificate" type="button" data-credential-card aria-pressed="false" aria-describedby="credential-certificate-tip">
+              <span class="credential-card-inner">
+                <span class="credential-face credential-front" aria-hidden="false">
+                  <span class="credential-topline"><span>National certificate</span><span>2024</span></span>
+                  <span class="credential-emblem" aria-hidden="true">CERT</span>
+                  <span class="credential-front-copy">
+                    <span class="credential-kind">국가기술자격</span>
+                    <span class="credential-title" role="heading" aria-level="3">프로그래밍기능사</span>
+                    <span class="credential-meta">한국산업인력공단 · 2024. 12. 11.</span>
+                  </span>
+                  <span class="credential-tooltip" id="credential-certificate-tip" role="tooltip"><small>쉽게 말하면</small><span>프로그래밍 언어, 알고리즘, 데이터 처리 등 소프트웨어 개발의 기초 역량을 국가가 검증한 자격입니다.</span></span>
+                  <span class="credential-action"><span>증빙 보기</span><span aria-hidden="true">↗</span></span>
+                </span>
+                <span class="credential-face credential-back" aria-hidden="true">
+                  <span class="credential-evidence">
+                    <img src="./assets/credentials/programming-craftsman-proof.webp" alt="개인정보를 가린 프로그래밍기능사 국가기술자격 취득사항 확인서">
+                    <span class="privacy-badge">공개용 사본 · 개인정보 가림</span>
+                  </span>
+                  <span class="credential-detail">
+                    <span class="credential-kind">Certificate detail</span>
+                    <span class="credential-detail-title">프로그래밍기능사</span>
+                    <span class="credential-detail-row"><span>발급 기관</span><strong>한국산업인력공단</strong></span>
+                    <span class="credential-detail-row"><span>합격 일자</span><strong>2024. 12. 11.</strong></span>
+                    <span class="credential-detail-note">소프트웨어 개발의 기초 역량을 공식적으로 검증받았습니다.</span>
+                  </span>
+                  <span class="credential-action"><span>이름으로 돌아가기</span><span aria-hidden="true">↺</span></span>
+                </span>
+              </span>
+            </button>
+
+            <button class="credential-card credential-award" type="button" data-credential-card aria-pressed="false" aria-describedby="credential-award-tip">
+              <span class="credential-card-inner">
+                <span class="credential-face credential-front" aria-hidden="false">
+                  <span class="credential-topline"><span>AI competition</span><span>2026</span></span>
+                  <span class="credential-emblem" aria-hidden="true">2ND</span>
+                  <span class="credential-front-copy">
+                    <span class="credential-kind">Competition award</span>
+                    <span class="credential-title credential-title-long" role="heading" aria-level="3">해군·해병대<br>인공지능(AI) 경진대회</span>
+                    <span class="credential-meta">우수상 · 2등 · 2026</span>
+                  </span>
+                  <span class="credential-tooltip" id="credential-award-tip" role="tooltip"><small>쉽게 말하면</small><span>해군·해병대가 제시한 과제를 AI로 해결하는 대회에서 결과물의 완성도와 문제 해결력을 인정받아 2등을 수상했습니다.</span></span>
+                  <span class="credential-action"><span>수상 사진 보기</span><span aria-hidden="true">↗</span></span>
+                </span>
+                <span class="credential-face credential-back" aria-hidden="true">
+                  <span class="credential-evidence award-evidence">
+                    <img src="./assets/credentials/navy-ai-award.webp" alt="2026년 해군·해병대 인공지능 경진대회 우수상 수상 단체 사진. 신유원과 상패가 빨간색으로 표시되어 있다">
+                    <span class="photo-marker">사진 속 빨간 표시</span>
+                  </span>
+                  <span class="credential-detail">
+                    <span class="credential-kind">Award detail</span>
+                    <span class="credential-detail-title">우수상 · 2등</span>
+                    <span class="credential-detail-row"><span>대회</span><strong>해군·해병대 인공지능(AI) 경진대회</strong></span>
+                    <span class="credential-detail-row"><span>수상 연도</span><strong>2026</strong></span>
+                    <span class="credential-detail-note">AI를 실제 과제 해결에 적용한 결과로 받은 수상 기록입니다.</span>
+                  </span>
+                  <span class="credential-action"><span>이름으로 돌아가기</span><span aria-hidden="true">↺</span></span>
+                </span>
+              </span>
+            </button>
+          </div>
+          <p class="credential-hint"><span aria-hidden="true">↗</span> 마우스를 올리면 쉬운 설명이, 누르면 증빙과 상세 내용이 표시됩니다.</p>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="wrap contact-grid">
+          <div><span class="kicker">04 · Contact</span><h2>Let’s build<br>what sees.</h2></div>
+          <div class="contact-list">
+            <div class="contact-row"><span>Email</span><a href="mailto:kimwonshin1210@gmail.com">kimwonshin1210@gmail.com</a></div>
+            <div class="contact-row"><span>Phone</span><a href="tel:+821073939376">010-7393-9376</a></div>
+            <div class="contact-row"><span>GitHub</span><a href="https://github.com/kimwonshin" target="_blank" rel="noreferrer">github.com/kimwonshin</a></div>
+            <div class="contact-row"><span>Blog</span><a href="https://wonshin.tistory.com/" target="_blank" rel="noreferrer">wonshin.tistory.com</a></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="wrap footer"><span>© 2026 Shin Yuwon</span><span>AI · Computer Vision · Software Engineering</span></footer>
+  </div>
+  <script>
+    (() => {
+      document.querySelectorAll('[data-credential-card]').forEach((card) => {
+        const front = card.querySelector('.credential-front');
+        const back = card.querySelector('.credential-back');
+
+        card.addEventListener('click', () => {
+          const flipped = card.classList.toggle('is-flipped');
+          card.setAttribute('aria-pressed', String(flipped));
+          front.setAttribute('aria-hidden', String(flipped));
+          back.setAttribute('aria-hidden', String(!flipped));
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
