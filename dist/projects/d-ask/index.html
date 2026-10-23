@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="학교 데이터 수집·전처리 파이프라인을 구축한 신유원의 D-ask 프로젝트 케이스 스터디">
+  <meta name="theme-color" content="#07111f">
+  <title>D-ask · 신유원 포트폴리오</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2307111f'/%3E%3Ccircle cx='32' cy='32' r='20' fill='none' stroke='%235fe1ff' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%23a995ff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <div class="site-shell project-page">
+    <header class="wrap">
+      <nav class="nav" aria-label="D-ask 프로젝트 메뉴">
+        <a class="mark" href="../../"><span class="mark-symbol">SY</span><span>Shin Yuwon</span></a>
+        <div class="nav-links">
+          <a href="#impact">Impact</a>
+          <a href="#contribution">My role</a>
+          <a href="#pipeline">Pipeline</a>
+          <a href="#evidence">Evidence</a>
+          <a class="nav-cta" href="../../#projects">All projects</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="dask-hero wrap" aria-labelledby="project-title">
+        <div class="dask-hero-copy">
+          <p class="eyebrow">Project 01 · Backend &amp; AI · Team MODEEP</p>
+          <h1 id="project-title">학교 정보를<br><span>한 번의 질문으로.</span></h1>
+          <p class="dask-lead">D-ask는 여러 플랫폼에 흩어진 학교 문서를 한곳에 모으고, 문서 기반 질문에 답하는 AI 웹서비스입니다. 저는 <strong>다섯 종류의 학교 데이터를 수집하고 AI가 사용할 수 있는 JSON으로 정규화하는 파이프라인</strong>을 개발했습니다.</p>
+          <div class="meta-row" aria-label="프로젝트 기술">
+            <span class="tag role-tag">Role · Backend &amp; AI</span>
+            <span class="tag">Python</span><span class="tag">BeautifulSoup</span><span class="tag">NEIS Open API</span><span class="tag">pycomcigan</span><span class="tag">BFS</span>
+          </div>
+          <dl class="project-facts" aria-label="프로젝트 정보">
+            <div><dt>Scope</dt><dd>학교 데이터 수집 · 전처리</dd></div>
+            <div><dt>Team</dt><dd>MODEEP · 4명</dd></div>
+            <div><dt>Output</dt><dd>AI 검색용 JSON 데이터</dd></div>
+          </dl>
+          <div class="hero-actions">
+            <a class="button primary" href="#contribution">기여 내용 보기</a>
+            <a class="button" href="https://github.com/D-ask11/D-ask_AI" target="_blank" rel="noreferrer">GitHub repository</a>
+          </div>
+        </div>
+        <div class="dask-brand-card" aria-label="D-ask 서비스 로고와 프로젝트 핵심 문구">
+          <img src="../../assets/d-ask/logo.png" alt="D-ask 서비스 로고">
+          <p>분산된 문서를<br>질문 가능한 데이터로</p>
+          <span>DATA COLLECTION → AI READY</span>
+        </div>
+      </section>
+
+      <section class="proof-strip" id="impact" aria-label="프로젝트 핵심 결과">
+        <div class="wrap proof-grid">
+          <article><small>COLLECTED</small><strong>5종</strong><span>학사일정 · 시간표 · 급식<br>공지사항 · 가정통신문</span></article>
+          <article><small>REFRESH CYCLE</small><strong>주 1회</strong><span>학교 데이터 정기 갱신<br>반복 가능한 수집 흐름</span></article>
+          <article><small>CRAWL STRATEGY</small><strong>BFS</strong><span>연결된 관련 페이지를<br>단계적으로 탐색</span></article>
+        </div>
+      </section>
+
+      <section class="case-section" id="overview">
+        <div class="wrap case-section-grid">
+          <div class="case-heading"><span class="kicker">01 · Product</span><h2>실제 서비스 화면으로 보는 D-ask</h2></div>
+          <div class="case-body">
+            <p class="section-intro">팀이 구현한 서비스 화면입니다. 아래 화면은 제품의 전체 맥락을 보여주며, 이 중 제가 맡은 범위는 화면에 공급되는 <strong>학교 데이터의 수집과 정규화</strong>입니다.</p>
+            <figure class="product-shot product-shot-main">
+              <img src="../../assets/d-ask/main-screen.png" alt="D-ask 메인 화면. 질문 검색, 사용 가이드, 자주 묻는 질문을 제공한다.">
+              <figcaption><span>MAIN</span> 질문 진입, 기능 가이드, FAQ를 한 화면에 구성</figcaption>
+            </figure>
+            <div class="screen-grid">
+              <figure class="product-shot"><img src="../../assets/d-ask/qna-screen.png" alt="학교 일정과 급식 질문에 답하는 D-ask QnA 화면"><figcaption><span>QNA</span> 학교 문서를 기반으로 한 대화형 답변</figcaption></figure>
+              <figure class="product-shot"><img src="../../assets/d-ask/calendar-screen.png" alt="월별 학사일정을 보여주는 D-ask 캘린더 화면"><figcaption><span>CALENDAR</span> 월별 주요 학사일정 확인</figcaption></figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="problem">
+        <div class="wrap case-section-grid">
+          <div class="case-heading"><span class="kicker">02 · Problem</span><h2>정보는 있었지만, 찾기 어려웠습니다.</h2></div>
+          <div class="case-body">
+            <p class="large-copy">학사 일정, 급식, 시간표, 공지와 가정통신문이 서로 다른 플랫폼과 문서에 흩어져 있었습니다. 특히 신입생은 <strong>정보의 위치부터 알아내야</strong> 했고, 선생님과 선배에게 같은 질문이 반복됐습니다.</p>
+            <ol class="problem-flow" aria-label="문제에서 해결 방향까지의 흐름">
+              <li><span>01</span><strong>분산</strong><p>홈페이지, 내부 공지, PDF 등 여러 위치에 정보가 존재</p></li>
+              <li><span>02</span><strong>탐색 비용</strong><p>원하는 문서가 어디 있는지 먼저 파악해야 하는 구조</p></li>
+              <li><span>03</span><strong>반복 질문</strong><p>학생과 교직원이 같은 정보를 여러 번 설명해야 하는 상황</p></li>
+              <li><span>04</span><strong>단일 창구</strong><p>문서 위치를 몰라도 자연어 질문으로 접근하는 서비스</p></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section contribution-section" id="contribution">
+        <div class="wrap case-section-grid">
+          <div class="case-heading"><span class="kicker">03 · My contribution</span><h2>AI가 답하기 전, 데이터를 준비했습니다.</h2><p class="section-aside">팀 전체 결과와 개인 기여를 구분했습니다. 신유원은 데이터 수집과 전처리를 담당했습니다.</p></div>
+          <div class="contribution-list">
+            <article><span>01</span><div><h3>5종 데이터 수집 파이프라인을 개발했다.</h3><p>학사일정, 시간표, 급식, 공지사항, 가정통신문을 각 출처에 맞는 방식으로 수집했습니다.</p><em>Output · 5개 데이터 카테고리</em></div></article>
+            <article><span>02</span><div><h3>출처별 수집 전략을 설계했다.</h3><p>구조화된 정보는 NEIS Open API와 pycomcigan으로, 웹 문서는 requests와 BeautifulSoup으로 나누어 처리했습니다.</p><em>Decision · 데이터 성격에 맞는 도구 선택</em></div></article>
+            <article><span>03</span><div><h3>BFS 기반 링크 탐색을 구현했다.</h3><p>학교 홈페이지에서 연결된 관련 페이지를 너비 우선으로 탐색해, 한 페이지에서 끝나지 않는 공지 구조를 수집했습니다.</p><em>Algorithm · Queue + visited URL</em></div></article>
+            <article><span>04</span><div><h3>AI가 읽을 수 있는 데이터로 정규화했다.</h3><p>서로 다른 응답 구조를 JSON으로 통일하고, 주 1회 다시 실행할 수 있는 갱신 흐름을 구성했습니다.</p><em>Handoff · Search / RAG pipeline</em></div></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="pipeline">
+        <div class="wrap case-section-grid">
+          <div class="case-heading"><span class="kicker">04 · Data pipeline</span><h2>세 가지 출처,<br>하나의 데이터 형식.</h2></div>
+          <div class="case-body">
+            <div class="source-cards">
+              <article><small>OPEN API</small><strong>NEIS</strong><p>학사일정 · 급식</p></article>
+              <article><small>PYTHON MODULE</small><strong>pycomcigan</strong><p>시간표</p></article>
+              <article class="source-highlight"><small>WEB CRAWLING</small><strong>BeautifulSoup + BFS</strong><p>공지 · 가정통신문</p></article>
+            </div>
+            <div class="pipeline-visual" aria-label="학교 데이터 처리 흐름">
+              <div><span>01</span><strong>Collect</strong><small>출처별 수집</small></div><b>→</b>
+              <div class="mine"><span>02 · MY ROLE</span><strong>Normalize</strong><small>파싱 · JSON 정규화</small></div><b>→</b>
+              <div><span>03</span><strong>Index</strong><small>검색 가능한 문서</small></div><b>→</b>
+              <div><span>04</span><strong>Answer</strong><small>RAG 기반 응답</small></div>
+            </div>
+            <p>수집 방식은 달라도 후속 AI 파이프라인은 동일한 형식을 받아야 했습니다. 그래서 출처별 파싱 규칙을 분리하고, 결과는 공통 JSON 구조로 맞추는 데 집중했습니다.</p>
+            <div class="pipeline-detail-grid">
+              <article class="bfs-card">
+                <div class="detail-label">BFS CRAWLER</div>
+                <div class="bfs-flow" aria-label="BFS 크롤링 동작 순서">
+                  <span>시작 URL</span><b>→</b><span>Queue</span><b>→</b><span>페이지 파싱</span><b>→</b><span>새 링크 추가</span>
+                </div>
+                <p><code>visited</code>에 이미 확인한 URL을 기록하고, 새로 발견한 관련 링크만 Queue에 추가하는 방식으로 탐색 범위를 관리했습니다.</p>
+              </article>
+              <article class="schema-card">
+                <div class="detail-label">NORMALIZED OUTPUT · CONCEPT</div>
+                <pre><code>{
+  "source": "school_notice",
+  "title": "...",
+  "content": "...",
+  "updated_at": "..."
+}</code></pre>
+                <p>실제 스키마의 복제가 아닌, 서로 다른 출처를 공통 필드로 맞춘 설계 개념을 보여주는 예시입니다.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="architecture">
+        <div class="wrap case-section-grid">
+          <div class="case-heading"><span class="kicker">05 · System context</span><h2>전체 시스템 속<br>내가 만든 부분.</h2></div>
+          <div class="case-body">
+            <figure class="document-figure">
+              <img src="../../assets/d-ask/architecture.png" alt="D-ask 프론트엔드, 백엔드, AI, Vector DB, JSON 데이터 간 연결 구조도">
+              <figcaption>팀 문서의 전체 구조도. 신유원은 학교 원천 데이터를 읽어 JSON 데이터로 만드는 수집·전처리 구간을 담당했습니다.</figcaption>
+            </figure>
+            <div class="role-boundary">
+              <div><span>TEAM SYSTEM</span><strong>Front-end · AI/RAG · Calendar API</strong><small>서비스 전체의 팀 결과</small></div>
+              <div class="role-owned"><span>MY OWNERSHIP</span><strong>School sources → Crawling/API → JSON data</strong><small>신유원의 직접 구현 범위</small></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section evidence-section" id="evidence">
+        <div class="wrap case-section-grid">
+          <div class="case-heading"><span class="kicker">06 · Evidence</span><h2>주장을 문서와<br>화면으로 확인했습니다.</h2><p class="section-aside">팀 문서에 없는 성능 수치나 사용자 수는 만들지 않았습니다.</p></div>
+          <div class="case-body">
+            <figure class="document-figure spec-figure">
+              <img src="../../assets/d-ask/feature-spec.png" alt="D-ask 캘린더, QnA, 메인 화면의 기능명세 표">
+              <figcaption>팀 기능명세 일부. 캘린더, QnA, 메인 화면의 요구 기능을 정리한 원본 문서입니다.</figcaption>
+            </figure>
+            <div class="evidence-list" aria-label="포트폴리오 근거 목록">
+              <article><span>PROJECT REPORT</span><strong>역할과 구현 범위</strong><p>신유원의 담당을 데이터 크롤링·전처리로 확인</p></article>
+              <article><span>PRODUCT SCREENS</span><strong>서비스 결과물</strong><p>메인, QnA, 캘린더의 실제 구현 화면 사용</p></article>
+              <article><span>SYSTEM DIAGRAM</span><strong>전체 맥락과 경계</strong><p>JSON 데이터가 백엔드와 AI에 연결되는 구조 확인</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-section" id="reflection">
+        <div class="wrap case-section-grid">
+          <div class="case-heading"><span class="kicker">07 · Reflection</span><h2>코드 밖의 정렬도<br>시스템의 일부였습니다.</h2></div>
+          <div class="case-body reflection-grid">
+            <article><span>LEARNED</span><h3>서로 다른 데이터를 다루는 법</h3><p>requests, BeautifulSoup, pycomcigan을 실제 데이터에 적용하며 각기 다른 구조를 AI가 사용할 수 있는 형태로 가공했습니다.</p></article>
+            <article><span>CHALLENGE</span><h3>같은 요구사항을 다르게 이해한 순간</h3><p>팀원 간 용어와 범위가 어긋나면 구현 방향도 달라진다는 것을 경험했습니다. 역할 합의와 진행 상황 공유가 프로젝트 품질에 직접 영향을 준다는 점을 배웠습니다.</p></article>
+            <article><span>NEXT</span><h3>수집 품질을 측정 가능한 시스템으로</h3><ul><li>크롤링 실패와 문서 변경 감지</li><li>중복 문서 제거와 버전 관리</li><li>질문 세트 기반 retrieval 평가</li><li>근거 일치 여부와 답변 품질 평가</li></ul></article>
+            <aside class="limit-note"><strong>현재 한계</strong><p>수집 성공률, 검색 정확도, 시간 절감 효과는 아직 정량 평가하지 않았습니다. 따라서 이 페이지는 확인된 구현 범위와 동작 흐름만 설명합니다.</p></aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-cta wrap">
+        <div><span class="kicker">D-ask · 2026</span><h2>문서를 모으는 일에서<br>질문 가능한 서비스까지.</h2></div>
+        <div class="hero-actions"><a class="button primary" href="https://github.com/D-ask11/D-ask_AI" target="_blank" rel="noreferrer">코드 보기</a><a class="button" href="../../#projects">다른 프로젝트 보기</a></div>
+      </section>
+    </main>
+
+    <footer class="wrap footer"><span>D-ask · Shin Yuwon</span><span>Backend · Data Pipeline · Applied AI</span></footer>
+  </div>
+</body>
+</html>
